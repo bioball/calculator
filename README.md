@@ -1,4 +1,4 @@
-I was given this as a coding question during my interview with ClassDojo--to build a calculator web app with a UI.
+I was given this as a coding question during one of my interviews: to build a calculator web app with a UI.
 
 During the interview, I ended up just outputting the result of an `eval`, but was intrigued enough by the question that I decided to revisit the question and rewrite the business logic.
 
