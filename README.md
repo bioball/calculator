@@ -14,7 +14,7 @@ var add = function(a, b){
 
 var stack = [];
 
-// push partially applied functions that respectively, when invoked, already has 1, 2, and 3 respectively as their first arguments
+// push partially applied functions that respectively, when invoked, already has 1, 2, and 3 as their first arguments
 stack.push(add.bind(null, 1));
 stack.push(add.bind(null, 2));
 stack.push(add.bind(null, 3));
