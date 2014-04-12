@@ -7,8 +7,6 @@ angular.module('calculator')
 
   var shouldClear = false;
 
-  var currentNum;
-
   var add = function(a, b){
     return a + b;
   };
