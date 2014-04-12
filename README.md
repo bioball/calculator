@@ -22,7 +22,7 @@ stack.push(add.bind(null, 3));
 // seed the result
 var result = 0;
 
-// here's where the calculation happens. Continually pop partially applied functions off the stack and reduce them into the result variable
+// here's where the calculation happens. Continually pop partially applied functions off the stack and invoke it with the output of the previously popped partial function. Also known as a reduceRight operation.
 while(stack.length){
   result = stack.pop()(result);
 }
