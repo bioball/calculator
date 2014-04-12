@@ -34,7 +34,7 @@ angular.module('calculator')
   };
 
   var getNum = function(){
-    return parseInt($scope.queryStr);
+    return parseFloat($scope.queryStr);
   };
 
   $scope.add = function(){
