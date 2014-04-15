@@ -36,13 +36,13 @@ angular.module('calculator')
   };
 
   $scope.add = function(){
-    stack.length && calculate(getNum());
+    stack.length && calculate();
     stack.push(add.bind(null, getNum()));
     shouldClear = true;
   };
 
   $scope.subtract = function(){
-    stack.length && calculate(getNum());
+    stack.length && calculate();
     stack.push(subtract.bind(null, getNum()));
     shouldClear = true;
   };
