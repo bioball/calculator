@@ -1,7 +1,7 @@
 angular.module('calculator')
 .controller('mainController', function($scope){
 
-  $scope.queryStr = 0;
+  $scope.queryStr = "0";
 
   var stack = [];
 
