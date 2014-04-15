@@ -1,10 +1,32 @@
+@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
 body, html {
   height: 100%; }
 
 .calculator-wrapper {
   width: 400px;
-  height: 400px;
-  margin: 50px auto; }
+  margin: 50px auto;
+  background-color: #fff1db;
+  border-radius: 10px; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.display {
+  padding: 10px 10px 0 10px; }
+
+.numDisplay {
+  width: 360px;
+  padding: 10px;
+  height: 80px;
+  text-align: right;
+  font-family: "Share Tech Mono", "Courier New";
+  font-size: 80px;
+  letter-spacing: -0.1em;
+  background-color: #d8e8dd;
+  color: #4c524e;
+  overflow: hidden; }
 
 ul {
   margin: 0;
@@ -14,20 +36,31 @@ li {
   margin: 0;
   padding: 0; }
 
+.buttons {
+  height: 100%;
+  overflow: hidden; }
+
 .buttons li {
   list-style: none;
   float: left;
   padding-top: 27px;
   font-size: 1.3em;
+  color: white;
+  font-weight: 700;
   box-sizing: border-box;
-  width: 80px;
   height: 80px;
   text-align: center;
   margin: 10px;
-  background-color: #dedede;
+  background-color: #ab6543;
   border-radius: 5px; }
   .buttons li:hover {
-    background-color: #cdcdcd; }
+    background-color: #995837; }
+
+.one-span {
+  width: 80px; }
+
+.two-span {
+  width: 180px; }
 
 .numbers {
   width: 300px;

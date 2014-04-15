@@ -1,31 +1,29 @@
 <div class="calculator-wrapper">
   <div class="display">
-    <form ng-submit="calculate()">
-      <input ng-model="queryStr"></input>
-      <button>Calculate</button>
-    </form>
+    <div class="numDisplay">{{ queryStr }}</div>
   </div>
   <div class="buttons">
-    <div class="numbers">
+    <div class="numbers clearfix">
       <ul>
-        <li ng-click="addDigit(1)">1</li>
-        <li ng-click="addDigit(2)">2</li>
-        <li ng-click="addDigit(3)">3</li>
-        <li ng-click="addDigit(4)">4</li>
-        <li ng-click="addDigit(5)">5</li>
-        <li ng-click="addDigit(6)">6</li>
-        <li ng-click="addDigit(7)">7</li>
-        <li ng-click="addDigit(8)">8</li>
-        <li ng-click="addDigit(9)">9</li>
-        <li ng-click="addDigit(0)">0</li>
+        <li class="one-span clearfix" ng-click="addDigit(1)">1</li>
+        <li class="one-span clearfix" ng-click="addDigit(2)">2</li>
+        <li class="one-span clearfix" ng-click="addDigit(3)">3</li>
+        <li class="one-span clearfix" ng-click="addDigit(4)">4</li>
+        <li class="one-span clearfix" ng-click="addDigit(5)">5</li>
+        <li class="one-span clearfix" ng-click="addDigit(6)">6</li>
+        <li class="one-span clearfix" ng-click="addDigit(7)">7</li>
+        <li class="one-span clearfix" ng-click="addDigit(8)">8</li>
+        <li class="one-span clearfix" ng-click="addDigit(9)">9</li>
+        <li class="one-span clearfix" ng-click="addDigit(0)">0</li>
+        <li class="two-span clearfix" ng-click="calculate()">=</li>
       </ul>
     </div>
-    <div class="operators">
+    <div class="operators clearfix">
       <ul>
-        <li ng-click="add()">+</li>
-        <li ng-click="subtract()">-</li>
-        <li ng-click="divide()">/</li>
-        <li ng-click="multiply()">*</li>
+        <li class="one-span clearfix" ng-click="add()">+</li>
+        <li class="one-span clearfix" ng-click="subtract()">-</li>
+        <li class="one-span clearfix" ng-click="divide()">/</li>
+        <li class="one-span clearfix" ng-click="multiply()">x</li>
       </ul>
     </div>
   </div>
