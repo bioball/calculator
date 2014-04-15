@@ -1,11 +1,11 @@
 angular.module('calculator')
 .controller('mainController', function($scope){
 
-  $scope.queryStr = '';
+  $scope.queryStr = 0;
 
   var stack = [];
 
-  var shouldClear = false;
+  var shouldClear = true;
 
   var add = function(a, b){
     return a + b;
